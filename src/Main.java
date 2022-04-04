@@ -108,11 +108,13 @@ public class Main
 
         System.out.println("Starting...");
 
-        final long startTime = System.currentTimeMillis();
-
         if(isValidProblem) {
+            final long startTime = System.currentTimeMillis();
+
             PuzzleSolver solver = new PuzzleSolver();
             ArrayList<PuzzleState> solution = solver.findSolution(initial, goal);
+
+            final long endTime = System.currentTimeMillis();
 
             for (PuzzleState state : solution) {
                 printStream.println(state.getAction());
@@ -120,14 +122,11 @@ public class Main
             }
             int size = solution.size() - 1;
 
-           printStream.printf("Solved in %d steps\n", size);
+            printStream.printf("Solved in %d steps\n", size);
+            printStream.printf("Total execution time: %d ms\n", endTime - startTime);
         } else {
             System.out.println("Not Solvable");
         }
-
-        final long endTime = System.currentTimeMillis();
-        printStream.printf("Total execution time: %d ms\n", endTime - startTime);
-
         System.out.println("Finished!");
     }
 }
