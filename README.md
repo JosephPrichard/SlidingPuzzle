@@ -1,6 +1,6 @@
 # NPuzzle
 
-Java AI to solve the [sliding puzzle problem](https://en.wikipedia.org/wiki/15_puzzle) using the AStar algorithm.
+Java AI to solve the [sliding puzzle problem](https://en.wikipedia.org/wiki/15_puzzle) using the AStar algorithm. This AI is guaranteed to find the shortest number of steps to solve a solvable NPuzzle. 
 
 This AI is capable of solving sliding puzzles of various sizes: 8puzzles, 15puzzles, NPuzzles, etc. However since this problem is considered NP-hard it can take a very long time to solve anything larger than a 15puzzle! As such, I reccomend you to stick to 8puzzles and 15puzzles unless you're going to run this AI in the background.
 
