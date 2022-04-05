@@ -9,6 +9,7 @@ This AI is capable of solving sliding puzzles of various sizes: 8puzzles, 15puzz
 To use this program, execute the jar file with the first argument the input file containing the sliding puzzle to be solved. 
 
 You can leave the first argument out to let my program generate a random solvable sliding puzzle it will solve.
+
 Examples for input and output files are contained in the root directory.
 
 ## About
